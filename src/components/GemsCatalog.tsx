@@ -227,7 +227,7 @@ export const GemsCatalog = () => {
     <div className="w-full max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 mb-16 animate-fade-in">
       {/* Hub-like Header */}
       <div className="bg-gray-50/50 border-b border-gray-100 p-4 lg:p-6 flex items-center justify-between">
-        <div className="flex items-center gap-2 overflow-hidden">
+        <div className="hidden lg:flex items-center gap-2 overflow-hidden">
           <span 
             className={`text-lg font-bold transition-colors ${currentFolder ? "cursor-pointer text-gray-400 hover:text-google-blue" : "text-gray-900"}`}
             onClick={currentFolder ? handleBack : undefined}
@@ -240,7 +240,7 @@ export const GemsCatalog = () => {
           </span>
         </div>
 
-        <div className="flex items-center bg-white border border-gray-200 rounded-full px-4 py-2 gap-2 group focus-within:ring-2 focus-within:ring-google-blue/20 transition-all shadow-sm">
+        <div className="flex flex-1 lg:flex-none items-center bg-white border border-gray-200 rounded-full px-4 py-2 gap-2 group focus-within:ring-2 focus-within:ring-google-blue/20 transition-all shadow-sm">
           <Search className="w-4 h-4 text-gray-400 group-focus-within:text-google-blue" />
           <input 
             type="text" 

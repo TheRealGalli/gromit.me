@@ -79,14 +79,14 @@ export const HeroSection = () => {
               isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
             }`}
           >
-            <div className="relative w-full max-w-[620px] h-[360px] sm:h-[500px] lg:h-[640px] flex items-center justify-center overflow-visible">
+            <div className="relative w-full max-w-[620px] h-[320px] sm:h-[500px] lg:h-[640px] flex items-center justify-center overflow-visible">
               {/* MASCOT — Centered visually on the container's 50% line */}
               <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
-                <div className="transform scale-[0.8] sm:scale-[1.3] lg:scale-[1.6] lg:translate-y-[20px]">
+                <div className="transform scale-[1.1] sm:scale-[1.3] lg:scale-[1.6]">
                   <img 
                     src={heroGems} 
                     alt="Gromit AI Gems" 
-                    className="w-[280px] sm:w-[350px] lg:w-[450px] h-auto animate-float"
+                    className="w-[240px] sm:w-[350px] lg:w-[450px] h-auto animate-float"
                   />
                 </div>
               </div>
@@ -95,56 +95,56 @@ export const HeroSection = () => {
               
               {/* 1. TOP - Risparmio Tangibile */}
               <div 
-                className="absolute left-1/2 top-[5%] -translate-x-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-4 py-2 sm:px-5 sm:py-2.5 text-[9px] sm:text-xs font-bold text-google-red border border-google-red/10 z-20"
+                className="absolute left-1/2 top-[2%] -translate-x-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-3 py-1.5 sm:px-5 sm:py-2.5 text-[8px] sm:text-xs font-bold text-google-red border border-google-red/10 z-20"
               >
                 💰 Risparmio Tangibile
               </div>
 
               {/* 2. TOP-RIGHT - AI Gems */}
               <div 
-                className="absolute left-[calc(50%+90px)] sm:left-[calc(50%+160px)] top-[20%] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-4 py-2 sm:px-5 sm:py-2.5 text-[9px] sm:text-xs font-bold text-google-blue border border-google-blue/10 z-20"
+                className="absolute left-[calc(50%+75px)] sm:left-[calc(50%+160px)] top-[20%] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-3 py-1.5 sm:px-5 sm:py-2.5 text-[8px] sm:text-xs font-bold text-google-blue border border-google-blue/10 z-20"
               >
                 🤖 AI Gems
               </div>
 
               {/* 3. MID-RIGHT - Aggiornamenti Costanti */}
               <div 
-                className="absolute left-[calc(50%+120px)] sm:left-[calc(50%+220px)] top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-4 py-2 sm:px-5 sm:py-2.5 text-[9px] sm:text-xs font-bold text-google-yellow border border-google-yellow/10 z-20"
+                className="absolute left-[calc(50%+100px)] sm:left-[calc(50%+220px)] top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-3 py-1.5 sm:px-5 sm:py-2.5 text-[8px] sm:text-xs font-bold text-google-yellow border border-google-yellow/10 z-20"
               >
                 🔄 Aggiornamenti Costanti
               </div>
 
               {/* 4. BOTTOM-RIGHT - Proprietà dei Dati */}
               <div 
-                className="absolute left-[calc(50%+90px)] sm:left-[calc(50%+160px)] top-[80%] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-4 py-2 sm:px-5 sm:py-2.5 text-[9px] sm:text-xs font-bold text-google-red border border-google-red/10 z-20"
+                className="absolute left-[calc(50%+75px)] sm:left-[calc(50%+160px)] top-[80%] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-3 py-1.5 sm:px-5 sm:py-2.5 text-[8px] sm:text-xs font-bold text-google-red border border-google-red/10 z-20"
               >
                 🛡️ Proprietà dei Dati
               </div>
 
               {/* 5. BOTTOM - Il Tuo Alleato Potente */}
               <div 
-                className="absolute left-1/2 bottom-[5%] -translate-x-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-4 py-2 sm:px-5 sm:py-2.5 text-[9px] sm:text-xs font-bold text-google-blue border border-google-blue/10 z-20"
+                className="absolute left-1/2 bottom-[2%] -translate-x-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-3 py-1.5 sm:px-5 sm:py-2.5 text-[8px] sm:text-xs font-bold text-google-blue border border-google-blue/10 z-20"
               >
                 🦾 Il Tuo Alleato Potente
               </div>
 
               {/* 6. BOTTOM-LEFT - Plug & Play */}
               <div 
-                className="absolute left-[calc(50%-90px)] sm:left-[calc(50%-160px)] top-[80%] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-4 py-2 sm:px-5 sm:py-2.5 text-[9px] sm:text-xs font-bold text-google-green border border-google-green/10 z-20"
+                className="absolute left-[calc(50%-75px)] sm:left-[calc(50%-160px)] top-[80%] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-3 py-1.5 sm:px-5 sm:py-2.5 text-[8px] sm:text-xs font-bold text-google-green border border-google-green/10 z-20"
               >
                 ⚡ Plug & Play
               </div>
 
               {/* 7. MID-LEFT - Guide Normative */}
               <div 
-                className="absolute left-[calc(50%-120px)] sm:left-[calc(50%-220px)] top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-4 py-2 sm:px-5 sm:py-2.5 text-[9px] sm:text-xs font-bold text-google-green border border-google-green/10 z-20"
+                className="absolute left-[calc(50%-100px)] sm:left-[calc(50%-220px)] top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-3 py-1.5 sm:px-5 sm:py-2.5 text-[8px] sm:text-xs font-bold text-google-green border border-google-green/10 z-20"
               >
                 ⚖️ Guide Normative
               </div>
 
               {/* 8. TOP-LEFT - Google Workspace Native */}
               <div 
-                className="absolute left-[calc(50%-90px)] sm:left-[calc(50%-160px)] top-[20%] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-4 py-2 sm:px-5 sm:py-2.5 text-[9px] sm:text-xs font-bold text-google-blue border border-google-blue/10 z-20"
+                className="absolute left-[calc(50%-75px)] sm:left-[calc(50%-160px)] top-[20%] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-3 py-1.5 sm:px-5 sm:py-2.5 text-[8px] sm:text-xs font-bold text-google-blue border border-google-blue/10 z-20"
               >
                 ☁️ Google Workspace Native
               </div>
