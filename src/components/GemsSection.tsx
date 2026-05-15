@@ -1,5 +1,5 @@
 import { useScrollReveal } from "../hooks/useScrollReveal";
-import { Shield, BookOpen, Scale, Cpu, Lock, Cloud, Check } from "lucide-react";
+import { BookOpen, Scale, Cpu, Lock, Cloud, Check } from "lucide-react";
 import { GemsCatalog } from "./GemsCatalog";
 
 const tiers = [

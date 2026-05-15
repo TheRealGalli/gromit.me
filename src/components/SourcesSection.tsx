@@ -1,5 +1,5 @@
 import { useScrollReveal } from "../hooks/useScrollReveal";
-import { Landmark, ScrollText, Globe, ExternalLink, MessageSquarePlus } from "lucide-react";
+import { ExternalLink, MessageSquarePlus } from "lucide-react";
 
 const sources = [
   {

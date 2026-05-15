@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Folder, Share2, ArrowLeft, ChevronRight, Search, LayoutGrid, List, Info, Clock, User } from "lucide-react";
+import { useState } from "react";
+import { Folder, ChevronRight, Search, Clock, User } from "lucide-react";
 
 interface Gem {
   id: string;
