@@ -75,7 +75,7 @@ export const HeroSection = () => {
 
           {/* Right — Mascot Illustration (No Shadows) */}
           <div
-            className={`flex-1 flex justify-center lg:justify-end transition-all duration-1000 delay-300 ${
+            className={`hidden lg:flex flex-1 justify-center lg:justify-end transition-all duration-1000 delay-300 ${
               isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
             }`}
           >
