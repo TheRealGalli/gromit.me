@@ -86,7 +86,7 @@ export const SupportSection = () => {
               </div>
 
               <a 
-                href="#" 
+                href="https://gemini.google.com/gem/1nMVYkxJFXqCHDee6fIryYG-AmeEd0FW2?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn bg-google-red hover:bg-google-red-dark text-white w-full py-5 text-lg flex items-center justify-center gap-3 shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all rounded-2xl"
