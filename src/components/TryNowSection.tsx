@@ -36,32 +36,59 @@ export const TryNowSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mt-12">
-          {/* Left Column: Interactive Button */}
-          <div className={`lg:col-span-5 flex flex-col items-center justify-center ${isVisible ? "animate-fade-in-left" : "reveal-hidden"}`}>
-            <div className="w-full p-8 rounded-[40px] bg-gradient-to-br from-google-blue/5 to-google-red/5 border border-google-blue/10 flex flex-col items-center text-center gap-8 shadow-sm">
-              <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-md animate-bounce-subtle">
-                <MessageSquare className="w-10 h-10 text-google-blue" />
+          {/* Left Column: Interactive Buttons */}
+          <div className={`lg:col-span-5 flex flex-col gap-6 ${isVisible ? "animate-fade-in-left" : "reveal-hidden"}`}>
+            {/* Assistant 1: Google Workspace */}
+            <div className="w-full p-6 rounded-[32px] bg-gradient-to-br from-google-blue/5 to-google-blue/10 border border-google-blue/10 flex flex-col items-center text-center gap-6 shadow-sm">
+              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
+                <MessageSquare className="w-8 h-8 text-google-blue" />
               </div>
               
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-gray-900 leading-tight">
-                  Parla con <br />
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold text-gray-900 leading-tight">
                   <span className="text-google-blue">Gromit Assistant:</span> <br />
                   Google Workspace
                 </h3>
-                <p className="text-sm text-gray-500 max-w-xs mx-auto">
-                  Accedi direttamente all'assistente su Gemini per una prova interattiva immediata.
+                <p className="text-[13px] text-gray-500 max-w-xs mx-auto">
+                  Scopri i vantaggi della suite Google professionale.
                 </p>
               </div>
 
               <a 
-                href="https://gemini.google.com/gem/1yvCWtFP5JQPj3j2MBXGi5CdTh2Mrjj-1?usp=sharing" 
+                href="https://gemini.google.com/gem/1HD6li8yHYZpS5r1xS4lQAGbEXeAIkm-2?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="btn btn-primary w-full py-5 text-lg flex items-center justify-center gap-3 shadow-google hover:scale-[1.02] active:scale-[0.98] transition-all"
+                className="btn btn-primary w-full py-4 text-base flex items-center justify-center gap-3 shadow-google hover:scale-[1.02] active:scale-[0.98] transition-all"
               >
                 Parla con l'Assistente
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+
+            {/* Assistant 2: Servizio Clienti */}
+            <div className="w-full p-6 rounded-[32px] bg-gradient-to-br from-google-green/5 to-google-green/10 border border-google-green/10 flex flex-col items-center text-center gap-6 shadow-sm">
+              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
+                <MessageSquare className="w-8 h-8 text-google-green" />
+              </div>
+              
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold text-gray-900 leading-tight">
+                  <span className="text-google-green">Gromit Assistant:</span> <br />
+                  Servizio Clienti
+                </h3>
+                <p className="text-[13px] text-gray-500 max-w-xs mx-auto">
+                  Supporto dedicato e risposte rapide alle tue domande.
+                </p>
+              </div>
+
+              <a 
+                href="https://gemini.google.com/gem/1nMVYkxJFXqCHDee6fIryYG-AmeEd0FW2?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn btn-primary bg-google-green hover:bg-google-green/90 w-full py-4 text-base flex items-center justify-center gap-3 shadow-google hover:scale-[1.02] active:scale-[0.98] transition-all border-none"
+              >
+                Parla con l'Assistente
+                <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           </div>
