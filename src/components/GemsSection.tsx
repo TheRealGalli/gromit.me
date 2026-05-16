@@ -85,7 +85,9 @@ export const GemsSection = () => {
         </div>
 
         {/* Interactive Gems Catalog */}
-        <GemsCatalog />
+        <div className={`transition-all duration-1000 delay-50 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+          <GemsCatalog />
+        </div>
 
         {/* Integration Cards */}
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 ${isVisible ? "animate-fade-in-up delay-100" : "reveal-hidden"}`}>

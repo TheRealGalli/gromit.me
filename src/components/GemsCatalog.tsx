@@ -224,7 +224,7 @@ export const GemsCatalog = () => {
   });
 
   return (
-    <div className="w-full max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 mb-16 animate-fade-in">
+    <div className="w-full max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 mb-16">
       {/* Hub-like Header */}
       <div className="bg-gray-50/50 border-b border-gray-100 p-4 lg:p-6 flex items-center justify-between">
         <div className="hidden lg:flex items-center gap-2 overflow-hidden">
