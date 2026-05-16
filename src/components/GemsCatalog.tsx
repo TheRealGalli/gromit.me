@@ -186,7 +186,47 @@ const GEMS_DATA: Gem[] = [
   },
 
   // 149€ tier
-  { id: "22", category: "Settore Immobiliare", price: 149, name: "Gromit Assistant: Legge Italiana ed Europea", description: "Analisi leggi integrali e normative fondamentali per il settore immobiliare." },
+  // 149€ tier - Specialized Legal & Administrative Assistants
+  { 
+    id: "22", 
+    category: "Settore Immobiliare", 
+    price: 149, 
+    name: "Gromit Assistant: Privacy e Intelligenza Artificiale", 
+    description: "Analisi normativa e supporto operativo su Privacy e AI in ambito professionale.",
+    docLink: "https://docs.google.com/document/d/1_GKFhSKMen8yhDhk6JVXU_vzS62U-2-0h4A2w40uXGU/edit?usp=drive_link"
+  },
+  { 
+    id: "23", 
+    category: "Settore Immobiliare", 
+    price: 149, 
+    name: "Gromit Assistant: Fiscale e Successioni", 
+    description: "Assistente esperto in normativa fiscale, successioni e gestione patrimoniale.",
+    docLink: "https://docs.google.com/document/d/1easMVAndTO9bTsI6L5_qZJw3Xrl8cf9m0Ubm0aaOI6A/edit?usp=drive_link"
+  },
+  { 
+    id: "24", 
+    category: "Settore Immobiliare", 
+    price: 149, 
+    name: "Gromit Assistant: Edilizia e Urbanistica", 
+    description: "Guida tecnica e normativa su edilizia, urbanistica e pratiche amministrative.",
+    docLink: "https://docs.google.com/document/d/1ciUerNLGwKwG3LHPKwOpkaKeQEF1xq-7iEEAV7DiHhU/edit?usp=drive_link"
+  },
+  { 
+    id: "25", 
+    category: "Settore Immobiliare", 
+    price: 149, 
+    name: "Gromit Assistant: Contrattualistica, Compliance e Privacy", 
+    description: "Supporto legale per contrattualistica, compliance aziendale e protezione dati.",
+    docLink: "https://docs.google.com/document/d/1jTLuTyHi54XaBNDb4GGMe4R0X9uEgBzX303-9v1oTjs/edit?usp=drive_link"
+  },
+  { 
+    id: "26", 
+    category: "Settore Immobiliare", 
+    price: 149, 
+    name: "Gromit Assistant: Condominio e Mediazione", 
+    description: "Esperto in gestione condominiale, risoluzione controversie e mediazione civile.",
+    docLink: "https://docs.google.com/document/d/1TGSKTRm6yhrINxKUEFWw5owa0ejpc7JKtuVYAV8eLE4/edit?usp=drive_link"
+  },
 ];
 
 export const GemsCatalog = () => {
