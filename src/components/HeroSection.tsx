@@ -104,7 +104,7 @@ export const HeroSection = () => {
               <div 
                 className="absolute left-[calc(50%+75px)] sm:left-[calc(50%+160px)] top-[20%] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap bg-white/95 backdrop-blur-sm shadow-md rounded-xl px-3 py-1.5 sm:px-5 sm:py-2.5 text-[8px] sm:text-xs font-bold text-google-blue border border-google-blue/10 z-20"
               >
-                🤖 AI Gems
+                🤖 Google Gemini
               </div>
 
               {/* 3. MID-RIGHT - Aggiornamenti Costanti */}
