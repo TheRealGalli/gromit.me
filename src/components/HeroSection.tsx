@@ -3,7 +3,7 @@ import { ArrowRight, Zap, Shield, Sparkles } from "lucide-react";
 import heroGems from "../assets/illustrations/hero-gems.png";
 
 export const HeroSection = () => {
-  const { ref: heroRef, isVisible } = useScrollReveal({ threshold: 0.1 });
+  const { ref: heroRef, isVisible } = useScrollReveal({ threshold: 0.05 });
 
   return (
     <section

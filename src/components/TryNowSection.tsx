@@ -2,7 +2,7 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 import { MessageSquare, ArrowRight, ShieldCheck, Zap, Laptop } from "lucide-react";
 
 export const TryNowSection = () => {
-  const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.15 });
+  const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.05 });
 
   const points = [
     {

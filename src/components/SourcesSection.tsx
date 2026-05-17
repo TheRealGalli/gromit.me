@@ -34,7 +34,7 @@ const sources = [
 ];
 
 export const SourcesSection = () => {
-  const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.15 });
+  const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.05 });
 
   return (
     <section id="sources" className="section" ref={sectionRef as any}>

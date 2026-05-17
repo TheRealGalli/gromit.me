@@ -2,7 +2,7 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 import { MessageSquare, ArrowRight, LifeBuoy, Lightbulb, FileText } from "lucide-react";
 
 export const SupportSection = () => {
-  const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.15 });
+  const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.05 });
 
   return (
     <section id="support" className="section bg-gray-50/50" ref={sectionRef as any}>

@@ -32,7 +32,7 @@ const stats = [
 ];
 
 export const TimeSavingsSection = () => {
-  const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.15 });
+  const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.05 });
 
   return (
     <section id="time-savings" className="section bg-gray-50" ref={sectionRef as any}>

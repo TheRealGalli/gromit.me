@@ -65,7 +65,7 @@ const tiers = [
 ];
 
 export const GemsSection = () => {
-  const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.1 });
+  const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.05 });
 
   return (
     <section id="gems" className="section bg-gray-50" ref={sectionRef as any}>

@@ -2,7 +2,7 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 import { Check, Shield, RefreshCw, ExternalLink, Zap } from "lucide-react";
 
 export const PricingSection = () => {
-  const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.1 });
+  const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.05 });
 
   const guarantees = [
     { icon: <Zap className="w-5 h-5" />, title: "Garantito a Vita", desc: "Il tuo Gem resta attivo e aggiornato per sempre nel tuo account." },
