@@ -298,11 +298,11 @@ export const GemsCatalog = () => {
           /* FOLDER LIST VIEW */
           <div key="folders" className="overflow-y-auto flex-1 animate-fade-in flex flex-col">
             <div className="grid grid-cols-12 px-6 py-3 border-b border-gray-50 text-[11px] font-semibold text-gray-400 uppercase tracking-wider bg-gray-50/30">
-              <div className="col-span-6 lg:col-span-7 flex items-center gap-1 cursor-pointer hover:text-gray-600">
+              <div className="col-span-12 lg:col-span-7 flex items-center gap-1 cursor-pointer hover:text-gray-600">
                 Nome <ChevronRight className="w-3 h-3 rotate-90" />
               </div>
               <div className="hidden lg:grid lg:col-span-2">Proprietario</div>
-              <div className="col-span-6 lg:col-span-3">Ultima modifica</div>
+              <div className="hidden lg:block lg:col-span-3">Ultima modifica</div>
             </div>
 
             <div className="px-6 py-4 flex-1">
@@ -311,7 +311,7 @@ export const GemsCatalog = () => {
                 onClick={() => handleFolderClick("Settore Immobiliare")}
                 className="grid grid-cols-12 px-4 py-3 hover:bg-gray-50 cursor-pointer group transition-colors rounded-xl items-center border-b border-gray-50"
               >
-                <div className="col-span-6 lg:col-span-7 flex items-center gap-4">
+                <div className="col-span-12 lg:col-span-7 flex items-center gap-4">
                   <div className="w-10 h-10 flex items-center justify-center text-google-red">
                     <Folder className="w-7 h-7 fill-current" />
                   </div>
@@ -321,13 +321,13 @@ export const GemsCatalog = () => {
                   <div className="w-6 h-6 rounded-full bg-google-red text-white flex items-center justify-center text-[10px] font-bold shadow-sm">C</div>
                   <span>me</span>
                 </div>
-                <div className="col-span-6 lg:col-span-3 text-xs text-gray-400">10 apr 2026</div>
+                <div className="hidden lg:block lg:col-span-3 text-xs text-gray-400">10 apr 2026</div>
               </div>
               
               {/* Future Interest Sectors */}
               {["Settore Beni di Pregio", "Settore Pubblica Amministrazione", "Settore Educational", "Settore E-commerce"].map((f) => (
                  <div key={f} className="grid grid-cols-12 px-4 py-3 opacity-50 grayscale cursor-not-allowed items-center border-b border-gray-50">
-                    <div className="col-span-6 lg:col-span-7 flex items-center gap-4">
+                    <div className="col-span-12 lg:col-span-7 flex items-center gap-4">
                       <div className="w-10 h-10 flex items-center justify-center text-gray-300">
                         <Folder className="w-7 h-7 fill-current" />
                       </div>
@@ -340,7 +340,7 @@ export const GemsCatalog = () => {
                       <div className="w-6 h-6 rounded-full bg-gray-200 text-white flex items-center justify-center text-[10px] font-bold">C</div>
                       <span>me</span>
                     </div>
-                    <div className="col-span-6 lg:col-span-3 text-xs text-gray-300 italic">Prossimamente</div>
+                    <div className="hidden lg:block lg:col-span-3 text-xs text-gray-300 italic">Prossimamente</div>
                  </div>
               ))}
             </div>
