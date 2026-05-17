@@ -325,7 +325,7 @@ export const GemsCatalog = () => {
               </div>
               
               {/* Future Interest Sectors */}
-              {["Settore Beni di Pregio", "Settore Private Equity", "Settore Educational", "Settore E-commerce"].map((f) => (
+              {["Settore Beni di Pregio", "Settore Pubblica Amministrazione", "Settore Educational", "Settore E-commerce"].map((f) => (
                  <div key={f} className="grid grid-cols-12 px-4 py-3 opacity-50 grayscale cursor-not-allowed items-center border-b border-gray-50">
                     <div className="col-span-6 lg:col-span-7 flex items-center gap-4">
                       <div className="w-10 h-10 flex items-center justify-center text-gray-300">
