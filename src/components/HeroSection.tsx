@@ -82,11 +82,11 @@ export const HeroSection = () => {
             <div className="relative w-full max-w-[620px] h-[320px] sm:h-[500px] lg:h-[640px] flex items-center justify-center overflow-visible">
               {/* MASCOT — Centered visually on the container's 50% line */}
               <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
-                <div className="transform scale-[1.1] sm:scale-[1.3] lg:scale-[1.6]">
+                <div className="transform scale-[1.1] sm:scale-[1.3] lg:scale-[1.3]">
                   <img 
                     src={heroGems} 
                     alt="Gromit AI Gems" 
-                    className="w-[240px] sm:w-[350px] lg:w-[450px] h-auto animate-float"
+                    className="w-[240px] sm:w-[350px] lg:w-[400px] h-auto animate-float"
                   />
                 </div>
               </div>
