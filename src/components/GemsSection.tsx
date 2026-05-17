@@ -1,6 +1,7 @@
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { BookOpen, Scale, Cpu, Lock, Cloud, Check } from "lucide-react";
 import { GemsCatalog } from "./GemsCatalog";
+import { useState, useEffect } from "react";
 
 const tiers = [
 // ... (keep tiers same)
@@ -66,12 +67,22 @@ const tiers = [
 
 export const GemsSection = () => {
   const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.05 });
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const shouldReveal = isVisible || isMobile;
 
   return (
     <section id="gems" className="section bg-gray-50" ref={sectionRef as any}>
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Header */}
-        <div className={`section-header ${isVisible ? "animate-fade-in-up" : "reveal-hidden"}`}>
+        <div className={`section-header ${shouldReveal ? "animate-fade-in-up" : "reveal-hidden"}`}>
           <span className="section-tag bg-google-blue-light text-google-blue">
             Il Cuore del Progetto
           </span>
@@ -85,12 +96,12 @@ export const GemsSection = () => {
         </div>
 
         {/* Interactive Gems Catalog */}
-        <div className={`transition-all duration-1000 delay-50 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+        <div className={`transition-all duration-1000 delay-50 ${shouldReveal ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <GemsCatalog />
         </div>
 
         {/* Integration Cards */}
-        <div className={`grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 ${isVisible ? "animate-fade-in-up delay-100" : "reveal-hidden"}`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 ${shouldReveal ? "animate-fade-in-up delay-100" : "reveal-hidden"}`}>
           {/* Google Workspace Card */}
           <div className="card flex flex-col gap-4">
             <div className="flex items-center gap-3">
@@ -143,7 +154,7 @@ export const GemsSection = () => {
               <div
                 className={`pricing-card tier-${tier.color} bg-white border ${tier.borderColor} flex flex-col h-full ${
                   tier.popular ? "ring-2 ring-google-blue/20 shadow-pricing" : "shadow-card"
-                } ${isVisible ? `animate-fade-in-up delay-${(index + 2) * 100}` : "reveal-hidden"}`}
+                } ${shouldReveal ? `animate-fade-in-up delay-${(index + 2) * 100}` : "reveal-hidden"}`}
                 id={`gem-card-${tier.color}`}
               >
                 <div className={`w-14 h-14 rounded-2xl ${tier.tagBg} flex items-center justify-center ${tier.tagText} mb-4`}>
