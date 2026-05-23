@@ -40,9 +40,10 @@ export const HeroSection = () => {
             </h1>
 
             <p className="text-base lg:text-xl text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              Sperimenta la potenza delle <strong>Configurazioni di Prompt Gromit Assistant</strong>, ottimizzate per Google Workspace.
               Benvenuto in <strong>Gromit.me</strong>, il portale dove l'innovazione di{" "}
               <strong>CSD Station</strong> incontra l'eccellenza operativa. Qui nascono i{" "}
-              <strong>Gromit Assistant</strong>, assistenti AI avanzati progettati per i professionisti più esigenti.
+              <strong>Gromit Assistant</strong>, le nostre Configurazioni di Prompt Ingegnerizzate progettate per i professionisti più esigenti.
             </p>
 
             {/* CTA Buttons */}
@@ -58,7 +59,7 @@ export const HeroSection = () => {
 
             {/* Trust indicators */}
             <div className="flex flex-wrap items-center gap-3 lg:gap-4 justify-center lg:justify-start mt-4 text-[11px] sm:text-sm text-gray-500">
-              <span className="flex items-center gap-1.5">
+              <span className="flex items-center gap-1.5" title="Zero Trust e Privacy, per le tue Configurazioni di Prompt Gromit Assistant">
                 <Shield className="w-4 h-4 text-google-green" />
                 Zero Trust & Privacy
               </span>
@@ -66,9 +67,9 @@ export const HeroSection = () => {
                 <Zap className="w-4 h-4 text-google-blue" />
                 Google Workspace B2B
               </span>
-              <span className="flex items-center gap-1.5">
+              <span className="flex items-center gap-1.5" title="Licenza d'uso perpetua e aggiornamenti costanti per la vita del prodotto">
                 <Sparkles className="w-4 h-4 text-google-yellow" />
-                Garantito a Vita
+                Licenza a Vita
               </span>
             </div>
           </div>

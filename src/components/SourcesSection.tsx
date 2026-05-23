@@ -45,7 +45,7 @@ export const SourcesSection = () => {
             Connessi con la <span className="text-google-green">Legge</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            La solidità dei nostri Gems si basa sulla qualità e sull'affidabilità delle loro fonti.
+            La solidità delle nostre <strong>Configurazioni di Prompt</strong> si basa sulla qualità e sull'affidabilità delle loro fonti.
             Un'informazione accurata è la base di ogni decisione di successo.
           </p>
         </div>

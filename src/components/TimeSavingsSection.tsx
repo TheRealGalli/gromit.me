@@ -81,7 +81,7 @@ export const TimeSavingsSection = () => {
               aggiornamenti sia al prompt che alle fonti di intelligenza.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Il tuo Gem <strong>non perde valore nel tempo</strong>, ma anzi si rivaluta.
+              La tua <strong>configurazione di prompt non perde valore nel tempo</strong>, ma anzi si rivaluta.
               Hai sempre lo strumento più performante a disposizione, permettendoti
               di concentrarti su ciò che conta: i tuoi clienti e la crescita del business.
             </p>

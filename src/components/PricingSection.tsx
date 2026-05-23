@@ -5,9 +5,9 @@ export const PricingSection = () => {
   const { ref: sectionRef, isVisible } = useScrollReveal({ threshold: 0.05 });
 
   const guarantees = [
-    { icon: <Zap className="w-5 h-5" />, title: "Garantito a Vita", desc: "Il tuo Gem resta attivo e aggiornato per sempre nel tuo account." },
+    { icon: <Zap className="w-5 h-5" />, title: "Licenza a Vita", desc: "La tua configurazione resta aggiornata per tutta la vita utile del prodotto." },
     { icon: <RefreshCw className="w-5 h-5" />, title: "Aggiornamenti Costanti", desc: "Prompt e knowledge base sempre al passo con le ultime evoluzioni." },
-    { icon: <Shield className="w-5 h-5" />, title: "1 Gem = 1 Account", desc: "Ogni Gem è collegato al singolo account Google Workspace." },
+    { icon: <Shield className="w-5 h-5" />, title: "1 Gem = 1 Account", desc: "Ogni configurazione è legata a un singolo account Workspace. Mantenimento Gem Best Effort." },
   ];
 
   return (
@@ -16,11 +16,10 @@ export const PricingSection = () => {
         <div className={`section-header ${isVisible ? "animate-fade-in-up" : "reveal-hidden"}`}>
           <span className="section-tag bg-google-red-light text-google-red">Investimento</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3">
-            Gems Garantiti <span className="text-google-red">a Vita</span>
+            Licenza d'Uso <span className="text-google-red">Perpetua</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Un investimento una tantum che si rivaluta nel tempo. Aggiornamenti continui
-            e nuove funzionalità senza costi aggiuntivi.
+            Risparmia tempo con le <strong>Configurazioni di Prompt Gromit Assistant</strong>! Un investimento una tantum che si rivaluta nel tempo. Acquisisci una licenza d'uso perpetua che include aggiornamenti continui per la vita del prodotto, senza costi aggiuntivi.
           </p>
         </div>
 
@@ -58,7 +57,7 @@ export const PricingSection = () => {
                     "Assistenti Tecnici Specializzati — da €79",
                     "Assistente Legge Italiana ed Europea — €149",
                     "Minimo 10 Gems per utente",
-                    "Licenza a vita per il tuo account",
+                    "Licenza perpetua per il tuo account",
                   ].map((item) => (
                     <div key={item} className="flex items-center gap-3">
                       <Check className="w-4 h-4 text-google-green flex-shrink-0" />
@@ -74,7 +73,7 @@ export const PricingSection = () => {
                   <span className="text-5xl lg:text-6xl font-extrabold text-gray-900">€49</span>
                   <span className="text-gray-500 text-lg">/gem</span>
                 </div>
-                <p className="text-gray-600 text-sm mb-6">Pagamento una tantum · Garantito a vita</p>
+                <p className="text-gray-600 text-sm mb-6">Pagamento una tantum · Licenza a vita</p>
                 <a href="#gems" className="btn btn-primary btn-lg w-full animate-pulse-glow" id="pricing-cta">
                   Esplora i Gems
                 </a>

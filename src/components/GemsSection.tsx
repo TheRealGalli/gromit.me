@@ -33,7 +33,7 @@ const tiers = [
     icon: <BookOpen className="w-6 h-6" />,
     popular: true,
     description:
-      "Gems con Knowledge Base settoriale dedicata gestita tramite Google Drive, incluse le guide dell'Agenzia delle Entrate.",
+      "Ogni Configurazione di Prompt Gromit Assistant include una Knowledge Base settoriale dedicata gestita tramite Google Drive, con fonti autorevoli come l'Agenzia delle Entrate.",
     features: [
       "Tutto di Servizi Google",
       "Knowledge Base settoriale su Google Drive",
@@ -114,9 +114,8 @@ export const GemsSection = () => {
               </div>
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
-              I Gems operano nel tuo ambiente di lavoro. Grazie ai <strong>Connettori Google Workspace</strong> di Gemini,
-              interagiscono con Gmail, Drive, Docs, Sheets, Calendar e altro, direttamente dalla tua casella aziendale.
-              Serve un account <strong>Google Workspace</strong> (email aziendale).
+              I <strong>Gromit Assistant</strong> si integrano fluidamente nel tuo ambiente Google Workspace come Google Gems. Grazie ai <strong>Connettori Google Workspace</strong> di Gemini,
+              interagiscono con Gmail, Drive, Docs, Sheets, Calendar e altro. <strong>L'operatività del Gem su Google Workspace è fornita in modalità "Best Effort"</strong>, subordinata all'infrastruttura di Google. Serve un account <strong>Google Workspace</strong> aziendale.
             </p>
           </div>
 
@@ -132,9 +131,8 @@ export const GemsSection = () => {
               </div>
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
-              CSD Station gestisce intelligenza e aggiornamenti, ma l'utilizzo avviene <strong>interamente nel tuo ambiente</strong>.
-              Noi non accediamo alle tue conversazioni o dati. Sei tu il titolare del trattamento.
-              Il Gem è garantito a vita nel tuo account.
+              CSD Station gestisce intelligenza e aggiornamenti delle <strong>Configurazioni di Prompt</strong>, ma l'utilizzo avviene <strong>interamente nel tuo ambiente</strong>.
+              Garantiamo totale privacy: noi non accediamo alle tue conversazioni o dati, sei tu il titolare del trattamento. La <strong>licenza d'uso della configurazione e i suoi aggiornamenti</strong> sono garantiti per la vita del prodotto nel tuo account.
             </p>
           </div>
         </div>
