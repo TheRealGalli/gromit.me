@@ -40,10 +40,7 @@ export const HeroSection = () => {
             </h1>
 
             <p className="text-base lg:text-xl text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Sperimenta la potenza delle <strong>Configurazioni di Prompt Gromit Assistant</strong>, ottimizzate per Google Workspace.
-              Benvenuto in <strong>Gromit.me</strong>, il portale dove l'innovazione di{" "}
-              <strong>CSD Station</strong> incontra l'eccellenza operativa. Qui nascono i{" "}
-              <strong>Gromit Assistant</strong>, le nostre Configurazioni di Prompt Ingegnerizzate pronte all'uso come Google Gems Plug-and-Play per i professionisti più esigenti.
+              Benvenuto in <strong>Gromit.me</strong>, dove l'innovazione di <strong>CSD Station</strong> diventa operativa. Scopri i <strong>Gromit Assistant</strong>: avanzate Configurazioni di Prompt pronte all'uso come Google Gems Plug-and-Play.
             </p>
 
             {/* CTA Buttons */}
