@@ -58,20 +58,7 @@ export const GemsSection = () => {
           </div>
 
           {/* Zero Trust Card */}
-          <div className="card flex flex-col gap-4">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-google-green-light flex items-center justify-center text-google-green">
-                <Lock className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-gray-900">Zero Trust & Piena Autonomia</h3>
-                <p className="text-sm text-gray-500">Tu hai il pieno controllo</p>
-              </div>
-            </div>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              CSD Station gestisce intelligenza e aggiornamenti delle <strong>Configurazioni di Prompt</strong>, ma l'utilizzo avviene <strong>interamente nel tuo ambiente</strong>.
-            </p>
-          </div>
+          
         </div>
       </div>
     </section>
