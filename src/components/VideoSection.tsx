@@ -24,27 +24,59 @@ export const VideoSection = () => {
           {/* Video 1 */}
           <div className="rounded-3xl overflow-hidden shadow-card hover:shadow-lg transition-shadow border border-gray-100 aspect-video w-full bg-gray-50 flex items-center justify-center relative group">
             <div className="absolute inset-0 border-2 border-transparent group-hover:border-google-red/20 rounded-3xl transition-colors pointer-events-none z-10"></div>
-            <iframe 
+            <iframe
               className="w-full h-full relative z-0 rounded-3xl"
-              src="https://www.youtube.com/embed/8uwa6SaqKaE?si=iQBh8oZVmUGcpxyH" 
-              title="YouTube video player" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerPolicy="strict-origin-when-cross-origin" 
+              src="https://www.youtube.com/embed/yixLuByVR2g?si=ndTj35ABJlMNFZMs"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              loading="lazy"
               allowFullScreen
             ></iframe>
           </div>
-          
+
           {/* Video 2 */}
           <div className="rounded-3xl overflow-hidden shadow-card hover:shadow-lg transition-shadow border border-gray-100 aspect-video w-full bg-gray-50 flex items-center justify-center relative group">
             <div className="absolute inset-0 border-2 border-transparent group-hover:border-google-red/20 rounded-3xl transition-colors pointer-events-none z-10"></div>
-            <iframe 
+            <iframe
               className="w-full h-full relative z-0 rounded-3xl"
-              src="https://www.youtube.com/embed/2tlc8gdv0jE?si=n9bP10383e-bN2aV" 
-              title="YouTube video player" 
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerPolicy="strict-origin-when-cross-origin" 
+              src="https://www.youtube.com/embed/3Mue80En_v8?si=-8PZvhsjre15DEIb"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              loading="lazy"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          {/* Video 3 */}
+          <div className="rounded-3xl overflow-hidden shadow-card hover:shadow-lg transition-shadow border border-gray-100 aspect-video w-full bg-gray-50 flex items-center justify-center relative group">
+            <div className="absolute inset-0 border-2 border-transparent group-hover:border-google-red/20 rounded-3xl transition-colors pointer-events-none z-10"></div>
+            <iframe
+              className="w-full h-full relative z-0 rounded-3xl"
+              src="https://www.youtube.com/embed/6dthiLYHQe4?si=4n1No36gm2_XgnOV"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              loading="lazy"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          {/* Video 4 */}
+          <div className="rounded-3xl overflow-hidden shadow-card hover:shadow-lg transition-shadow border border-gray-100 aspect-video w-full bg-gray-50 flex items-center justify-center relative group">
+            <div className="absolute inset-0 border-2 border-transparent group-hover:border-google-red/20 rounded-3xl transition-colors pointer-events-none z-10"></div>
+            <iframe
+              className="w-full h-full relative z-0 rounded-3xl"
+              src="https://www.youtube.com/embed/WigOq7Oxds0?si=osoAjFszsv8mWEHg"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              loading="lazy"
               allowFullScreen
             ></iframe>
           </div>
