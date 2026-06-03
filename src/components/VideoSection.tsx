@@ -26,7 +26,7 @@ export const VideoSection = () => {
             <div className="absolute inset-0 border-2 border-transparent group-hover:border-google-red/20 rounded-3xl transition-colors pointer-events-none z-10"></div>
             <iframe
               className="w-full h-full relative z-0 rounded-3xl"
-              src="https://www.youtube.com/embed/yixLuByVR2g?si=ndTj35ABJlMNFZMs"
+              src="https://www.youtube.com/embed/1wn0XEEog3s?si=Ih0EXfXqdJL6Os3T"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -41,7 +41,7 @@ export const VideoSection = () => {
             <div className="absolute inset-0 border-2 border-transparent group-hover:border-google-red/20 rounded-3xl transition-colors pointer-events-none z-10"></div>
             <iframe
               className="w-full h-full relative z-0 rounded-3xl"
-              src="https://www.youtube.com/embed/3Mue80En_v8?si=-8PZvhsjre15DEIb"
+              src="https://www.youtube.com/embed/6m8kwDkOC1U?si=mohAuCd7Trg1rzy-"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -56,7 +56,7 @@ export const VideoSection = () => {
             <div className="absolute inset-0 border-2 border-transparent group-hover:border-google-red/20 rounded-3xl transition-colors pointer-events-none z-10"></div>
             <iframe
               className="w-full h-full relative z-0 rounded-3xl"
-              src="https://www.youtube.com/embed/6dthiLYHQe4?si=4n1No36gm2_XgnOV"
+              src="https://www.youtube.com/embed/NMaK-tx8BN0?si=Cpu3FDCbUbKLmRmp"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -71,7 +71,7 @@ export const VideoSection = () => {
             <div className="absolute inset-0 border-2 border-transparent group-hover:border-google-red/20 rounded-3xl transition-colors pointer-events-none z-10"></div>
             <iframe
               className="w-full h-full relative z-0 rounded-3xl"
-              src="https://www.youtube.com/embed/WigOq7Oxds0?si=osoAjFszsv8mWEHg"
+              src="https://www.youtube.com/embed/bnQkaw04Kzs?si=Mbm8CJNsh84fjAoL"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
