@@ -4,7 +4,6 @@ import { Folder, ChevronRight, Search, Clock, User } from "lucide-react";
 interface Gem {
   id: string;
   name: string;
-  price: number;
   description: string;
   category: string;
   docLink?: string;
@@ -17,7 +16,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "1", 
     category: "Settore Immobiliare", 
-    price: 49, 
     name: "Gromit Assistant: Google Workspace Admin", 
     description: "Supporta amministratori Google Workspace in configurazione, gestione e conformità.",
     docLink: "https://docs.google.com/document/d/10thnzmatrOnJgBzFGpY3VgfbiszU6qxTQRn0oPErsjw/edit?usp=drive_link",
@@ -27,7 +25,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "2", 
     category: "Settore Immobiliare", 
-    price: 49, 
     name: "Gromit Assistant: Campagne Google Ads", 
     description: "Crea strategie Google Ads e SEO per lead immobiliari mirati.",
     docLink: "https://docs.google.com/document/d/15pU43Fgv7e0OGzLuM14FW133PCuwM6UXYYhuhcC7-Ik/edit?usp=drive_link",
@@ -37,7 +34,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "3", 
     category: "Settore Immobiliare", 
-    price: 49, 
     name: "Gromit Assistant: Google Workspace Gemini", 
     description: "Guida all'uso di Gemini in Google Workspace, automazioni no-code.",
     docLink: "https://docs.google.com/document/d/10tDcpR5OdWSAwKDIoYKL70XbNIZXK21RBgNHOSoU6A4/edit?usp=drive_link",
@@ -47,7 +43,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "4", 
     category: "Settore Immobiliare", 
-    price: 49, 
     name: "Gromit Assistant: Google Workspace Studio", 
     description: "Guida alla creazione di automazioni no-code con Google Workspace Studio.",
     docLink: "https://docs.google.com/document/d/1-q8EsZjn9b1rjDzk5IMA5nR6JQG448IV-lZt1oT440E/edit?usp=drive_link",
@@ -59,7 +54,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "5", 
     category: "Settore Immobiliare", 
-    price: 49, 
     name: "Gromit Assistant: Allestimento Immagini Immobiliari", 
     description: "Allestisce e valorizza immagini immobiliari per presentazioni efficaci.",
     docLink: "https://docs.google.com/document/d/169Sq_8-B1cTRrefjpjbhV8IEsznJHo9kl6JUM877AzU/edit?usp=drive_link",
@@ -69,7 +63,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "6", 
     category: "Settore Immobiliare", 
-    price: 49, 
     name: "Gromit Assistant: Pulizia Immagini Immobiliari", 
     description: "Ottimizza e pulisce immagini immobiliari per presentazioni professionali.",
     docLink: "https://docs.google.com/document/d/1NOjAn2NoX_gMbWvM7s57yEGVhhO_ibrIYN1hS7L3HY0/edit?usp=drive_link",
@@ -81,7 +74,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "7", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Copywriter", 
     description: "Crea testi annunci immobiliari persuasivi per portali e social.",
     docLink: "https://docs.google.com/document/d/14jDXitQ__HEsmI8i8EJg7KhcKnt9AzfGQnvllQh-kZM/edit?usp=drive_link",
@@ -91,7 +83,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "8", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Acquisizione Immobiliare", 
     description: "Guida completa all'acquisizione immobili, documenti e workflow.",
     docLink: "https://docs.google.com/document/d/1694xzqSHaI6zzvUEVftobgdfPjjk5ma2bQMxehRs--k/edit?usp=drive_link",
@@ -101,7 +92,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "9", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Follow-up Post Visita Immobiliare", 
     description: "Genera follow-up personalizzati post-visita, analizza feedback.",
     docLink: "https://docs.google.com/document/d/11FUF5k_-9z-v0WWqTM3SSxGwbEe8kGBqTuWy44j_V4o/edit?usp=drive_link",
@@ -111,7 +101,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "10", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Qualificazione Lead Immobiliare", 
     description: "Qualifica lead, crea questionari personalizzati e gestisce follow-up.",
     docLink: "https://docs.google.com/document/d/19DtJpMfdXalZ3uQtciwpYiB33NkrPxkwNtd15ab9KDM/edit?usp=drive_link",
@@ -121,7 +110,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "11", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Acquisizione Telefonica", 
     description: "Genera script, gestisce task per acquisizione telefonica efficace.",
     docLink: "https://docs.google.com/document/d/164GXMaLQWv5MDDOSHB93oiKID9cVwqgbK_uCja6BsRc/edit?usp=drive_link",
@@ -131,7 +119,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "12", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Info Mutui e Bonus", 
     description: "Ricerca mutui, bonus edilizi e agevolazioni fiscali aggiornate.",
     docLink: "https://docs.google.com/document/d/1-8fSYep-8zyik9Rk306s7SN2JmAQZTAJLbTf1RF5Cpk/edit?usp=drive_link",
@@ -141,7 +128,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "13", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Tributi Locali", 
     description: "Calcola e stima imposte immobiliari (IMU, TARI, Registro).",
     docLink: "https://docs.google.com/document/d/1Drln4nk39XVT595od_abYp9RTgUnaRZDmsAK4HKnaBI/edit?usp=drive_link",
@@ -151,7 +137,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "14", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Punti di Interesse", 
     description: "Identifica e valorizza POI intorno a immobili, arricchendo descrizioni.",
     docLink: "https://docs.google.com/document/d/1joIxAQdjmqTPVEIX2R5TT0rdrDNG_XfBBNEb6zCrkqQ/edit?usp=drive_link",
@@ -161,7 +146,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "15", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Professionisti Locali", 
     description: "Ricerca e qualifica professionisti locali per ogni esigenza immobiliare.",
     docLink: "https://docs.google.com/document/d/1dLgPju5lWqI8hVSnhRtoVIaY0CaiuUtP3AxFwBh6JLM/edit?usp=drive_link",
@@ -171,7 +155,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "16", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Ristrutturazioni", 
     description: "Stima costi, obblighi e interventions per ristrutturazioni e bonus energetici.",
     docLink: "https://docs.google.com/document/d/1vlb6XcG4S85Hwa5Yy2tD4fq3zCY3fjQW6kgwQ_8JJ1Q/edit?usp=drive_link",
@@ -181,7 +164,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "17", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Outlook Immobiliare", 
     description: "Analizza e prevede tendenze mercato, tempi di vendita, valutazioni.",
     docLink: "https://docs.google.com/document/d/18ijwyzcmeiZt3ww6VqeaCtkZOJ9-MTZcjSKMz_Njq-A/edit?usp=drive_link",
@@ -191,9 +173,8 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "18", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Mediazione Emotiva Localizzata", 
-    description: "Gestisce dinamiche emotive in trattative immobiliari, offre piani d'azione.",
+    description: "Gestisce dinamiche emotive in trattative immobiliari, offers piani d'azione.",
     docLink: "https://docs.google.com/document/d/1c_8mfXFDFsM1rO-TisGp1NddrSpEyRSwK-o2YKg4ljs/edit?usp=drive_link",
     source: "ade",
     emoji: "🤝"
@@ -201,7 +182,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "19", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Conformità Impianti", 
     description: "Analizza conformità impianti edilizi, Direttiva Case Green e normative.",
     docLink: "https://docs.google.com/document/d/14ubcySMrFMZKMKssHa1jVjKhXmywFQ9Y4dOkDiSB69Y/edit?usp=drive_link",
@@ -211,7 +191,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "20", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: AML", 
     description: "Assiste in adempimenti antiriciclaggio, follow-up e gestione documentale AML.",
     docLink: "https://docs.google.com/document/d/16-hZUTaisfbUisnlASBBzgjNSP1ztbLVKyYsKJiBvBM/edit?usp=drive_link",
@@ -221,7 +200,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "21", 
     category: "Settore Immobiliare", 
-    price: 79, 
     name: "Gromit Assistant: Filtro Pre-Rogito", 
     description: "Prepara pratiche rogito, verifica documenti e accertamenti necessari.",
     docLink: "https://docs.google.com/document/d/11f_8wtKMuY2Gv42PB1bHr3izWDAfcTEsKqRMey13ENY/edit?usp=drive_link",
@@ -233,7 +211,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "22", 
     category: "Settore Immobiliare", 
-    price: 149, 
     name: "Gromit Assistant: Privacy e Intelligenza Artificiale", 
     description: "Analisi normativa e supporto operativo su Privacy e AI in ambito professionale.",
     docLink: "https://docs.google.com/document/d/1_GKFhSKMen8yhDhk6JVXU_vzS62U-2-0h4A2w40uXGU/edit?usp=drive_link",
@@ -243,7 +220,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "23", 
     category: "Settore Immobiliare", 
-    price: 149, 
     name: "Gromit Assistant: Fiscale e Successioni", 
     description: "Assistente esperto in normativa fiscale, successioni e gestione patrimoniale.",
     docLink: "https://docs.google.com/document/d/1easMVAndTO9bTsI6L5_qZJw3Xrl8cf9m0Ubm0aaOI6A/edit?usp=drive_link",
@@ -253,7 +229,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "24", 
     category: "Settore Immobiliare", 
-    price: 149, 
     name: "Gromit Assistant: Edilizia e Urbanistica", 
     description: "Guida tecnica e normativa su edilizia, urbanistica e pratiche amministrative.",
     docLink: "https://docs.google.com/document/d/1ciUerNLGwKwG3LHPKwOpkaKeQEF1xq-7iEEAV7DiHhU/edit?usp=drive_link",
@@ -263,7 +238,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "25", 
     category: "Settore Immobiliare", 
-    price: 149, 
     name: "Gromit Assistant: Contrattualistica, Compliance e Privacy", 
     description: "Supporto legale per contrattualistica, compliance aziendale e protezione dati.",
     docLink: "https://docs.google.com/document/d/1jTLuTyHi54XaBNDb4GGMe4R0X9uEgBzX303-9v1oTjs/edit?usp=drive_link",
@@ -273,7 +247,6 @@ const GEMS_DATA: Gem[] = [
   { 
     id: "26", 
     category: "Settore Immobiliare", 
-    price: 149, 
     name: "Gromit Assistant: Condominio e Mediazione", 
     description: "Esperto in gestione condominiale, risoluzione controversie e mediazione civile.",
     docLink: "https://docs.google.com/document/d/1TGSKTRm6yhrINxKUEFWw5owa0ejpc7JKtuVYAV8eLE4/edit?usp=drive_link",
