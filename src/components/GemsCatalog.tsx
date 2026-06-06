@@ -8,12 +8,12 @@ interface Gem {
   description: string;
   category: string;
   docLink?: string;
-  source: "ade" | "normativa" | "google" | "immagini"; // Le 4 fonti richieste
-  emoji: string; // Emoji dell'assistente
+  source: "ade" | "normativa" | "google" | "immagini";
+  emoji: string;
 }
 
 const GEMS_DATA: Gem[] = [
-  // Google Workspace (Applicazioni Google) - €49
+  // Google Workspace (Applicazioni Google) - Primi 4 assistenti soltanto
   { 
     id: "1", 
     category: "Settore Immobiliare", 
@@ -55,7 +55,7 @@ const GEMS_DATA: Gem[] = [
     emoji: "💻"
   },
 
-  // Elaborazione Immagini - €49
+  // Elaborazione Immagini
   { 
     id: "5", 
     category: "Settore Immobiliare", 
@@ -77,7 +77,7 @@ const GEMS_DATA: Gem[] = [
     emoji: "✨"
   },
 
-  // Agenzia Immobiliare con Knowledge - €79
+  // Tutti gli altri sono sotto AdE Informa
   { 
     id: "7", 
     category: "Settore Immobiliare", 
@@ -85,7 +85,7 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: Copywriter", 
     description: "Crea testi annunci immobiliari persuasivi per portali e social.",
     docLink: "https://docs.google.com/document/d/14jDXitQ__HEsmI8i8EJg7KhcKnt9AzfGQnvllQh-kZM/edit?usp=drive_link",
-    source: "google",
+    source: "ade",
     emoji: "✍️"
   },
   { 
@@ -95,7 +95,7 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: Acquisizione Immobiliare", 
     description: "Guida completa all'acquisizione immobili, documenti e workflow.",
     docLink: "https://docs.google.com/document/d/1694xzqSHaI6zzvUEVftobgdfPjjk5ma2bQMxehRs--k/edit?usp=drive_link",
-    source: "normativa",
+    source: "ade",
     emoji: "🔑"
   },
   { 
@@ -105,7 +105,7 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: Follow-up Post Visita Immobiliare", 
     description: "Genera follow-up personalizzati post-visita, analizza feedback.",
     docLink: "https://docs.google.com/document/d/11FUF5k_-9z-v0WWqTM3SSxGwbEe8kGBqTuWy44j_V4o/edit?usp=drive_link",
-    source: "google",
+    source: "ade",
     emoji: "📬"
   },
   { 
@@ -115,7 +115,7 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: Qualificazione Lead Immobiliare", 
     description: "Qualifica lead, crea questionari personalizzati e gestisce follow-up.",
     docLink: "https://docs.google.com/document/d/19DtJpMfdXalZ3uQtciwpYiB33NkrPxkwNtd15ab9KDM/edit?usp=drive_link",
-    source: "google",
+    source: "ade",
     emoji: "🎯"
   },
   { 
@@ -125,7 +125,7 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: Acquisizione Telefonica", 
     description: "Genera script, gestisce task per acquisizione telefonica efficace.",
     docLink: "https://docs.google.com/document/d/164GXMaLQWv5MDDOSHB93oiKID9cVwqgbK_uCja6BsRc/edit?usp=drive_link",
-    source: "google",
+    source: "ade",
     emoji: "📞"
   },
   { 
@@ -155,7 +155,7 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: Punti di Interesse", 
     description: "Identifica e valorizza POI intorno a immobili, arricchendo descrizioni.",
     docLink: "https://docs.google.com/document/d/1joIxAQdjmqTPVEIX2R5TT0rdrDNG_XfBBNEb6zCrkqQ/edit?usp=drive_link",
-    source: "google",
+    source: "ade",
     emoji: "📍"
   },
   { 
@@ -165,7 +165,7 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: Professionisti Locali", 
     description: "Ricerca e qualifica professionisti locali per ogni esigenza immobiliare.",
     docLink: "https://docs.google.com/document/d/1dLgPju5lWqI8hVSnhRtoVIaY0CaiuUtP3AxFwBh6JLM/edit?usp=drive_link",
-    source: "google",
+    source: "ade",
     emoji: "👷"
   },
   { 
@@ -173,9 +173,9 @@ const GEMS_DATA: Gem[] = [
     category: "Settore Immobiliare", 
     price: 79, 
     name: "Gromit Assistant: Ristrutturazioni", 
-    description: "Stima costi, obblighi e interventi per ristrutturazioni e bonus energetici.",
+    description: "Stima costi, obblighi e interventions per ristrutturazioni e bonus energetici.",
     docLink: "https://docs.google.com/document/d/1vlb6XcG4S85Hwa5Yy2tD4fq3zCY3fjQW6kgwQ_8JJ1Q/edit?usp=drive_link",
-    source: "normativa",
+    source: "ade",
     emoji: "🔨"
   },
   { 
@@ -185,7 +185,7 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: Outlook Immobiliare", 
     description: "Analizza e prevede tendenze mercato, tempi di vendita, valutazioni.",
     docLink: "https://docs.google.com/document/d/18ijwyzcmeiZt3ww6VqeaCtkZOJ9-MTZcjSKMz_Njq-A/edit?usp=drive_link",
-    source: "google",
+    source: "ade",
     emoji: "🔮"
   },
   { 
@@ -195,7 +195,7 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: Mediazione Emotiva Localizzata", 
     description: "Gestisce dinamiche emotive in trattative immobiliari, offre piani d'azione.",
     docLink: "https://docs.google.com/document/d/1c_8mfXFDFsM1rO-TisGp1NddrSpEyRSwK-o2YKg4ljs/edit?usp=drive_link",
-    source: "google",
+    source: "ade",
     emoji: "🤝"
   },
   { 
@@ -205,7 +205,7 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: Conformità Impianti", 
     description: "Analizza conformità impianti edilizi, Direttiva Case Green e normative.",
     docLink: "https://docs.google.com/document/d/14ubcySMrFMZKMKssHa1jVjKhXmywFQ9Y4dOkDiSB69Y/edit?usp=drive_link",
-    source: "normativa",
+    source: "ade",
     emoji: "🔌"
   },
   { 
@@ -215,7 +215,7 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: AML", 
     description: "Assiste in adempimenti antiriciclaggio, follow-up e gestione documentale AML.",
     docLink: "https://docs.google.com/document/d/16-hZUTaisfbUisnlASBBzgjNSP1ztbLVKyYsKJiBvBM/edit?usp=drive_link",
-    source: "normativa",
+    source: "ade",
     emoji: "🛡️"
   },
   { 
@@ -225,11 +225,11 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: Filtro Pre-Rogito", 
     description: "Prepara pratiche rogito, verifica documenti e accertamenti necessari.",
     docLink: "https://docs.google.com/document/d/11f_8wtKMuY2Gv42PB1bHr3izWDAfcTEsKqRMey13ENY/edit?usp=drive_link",
-    source: "normativa",
+    source: "ade",
     emoji: "📄"
   },
 
-  // Specialized Legal & Administrative Assistants - €149
+  // Normattiva / Eur-Lex - I 5 assistenti da 149€
   { 
     id: "22", 
     category: "Settore Immobiliare", 
@@ -247,7 +247,7 @@ const GEMS_DATA: Gem[] = [
     name: "Gromit Assistant: Fiscale e Successioni", 
     description: "Assistente esperto in normativa fiscale, successioni e gestione patrimoniale.",
     docLink: "https://docs.google.com/document/d/1easMVAndTO9bTsI6L5_qZJw3Xrl8cf9m0Ubm0aaOI6A/edit?usp=drive_link",
-    source: "ade",
+    source: "normativa",
     emoji: "💼"
   },
   { 
@@ -322,9 +322,6 @@ export const GemsCatalog = () => {
     }
     return matchesSearch;
   });
-
-  // Disponibili: solo i due allestimento e pulizia immagini per ora (id "5" e "6")
-  const isAvailable = (gem: Gem) => gem.id === "5" || gem.id === "6";
 
   // Raggruppamento per fonte
   const sourcesKeys: Array<keyof typeof SOURCE_LABELS> = ["ade", "normativa", "google", "immagini"];
@@ -450,18 +447,13 @@ export const GemsCatalog = () => {
                         {/* Gems Grid */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           {gemsInSource.map((gem) => {
-                            const available = isAvailable(gem);
                             return (
                               <div 
                                 key={gem.id}
                                 onClick={() => gem.docLink && window.open(gem.docLink, '_blank')}
-                                className={`flex items-start gap-4 p-4 rounded-2xl border transition-all shadow-sm hover:shadow-card-hover group ${
-                                  available 
-                                    ? "bg-gradient-to-br from-google-blue-light/10 via-white to-google-green-light/10 hover:from-google-blue-light/20 hover:via-white hover:to-google-green-light/20 border-google-blue/15 hover:border-google-blue/40 cursor-pointer"
-                                    : "bg-gray-50/70 hover:bg-white border-transparent hover:border-google-blue/20 cursor-pointer"
-                                }`}
+                                className="flex items-start gap-4 p-4 rounded-2xl border bg-gradient-to-br from-google-blue-light/10 via-white to-google-green-light/10 hover:from-google-blue-light/20 hover:via-white hover:to-google-green-light/20 border-google-blue/15 hover:border-google-blue/40 shadow-sm hover:shadow-card-hover group cursor-pointer"
                               >
-                                {/* Emoji Avatar instead of SVG Google icon */}
+                                {/* Emoji Avatar */}
                                 <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center text-2xl shadow-md flex-shrink-0 border border-gray-100 transition-transform group-hover:scale-105 select-none">
                                   {gem.emoji}
                                 </div>
@@ -507,12 +499,8 @@ export const GemsCatalog = () => {
                                         {copiedId === gem.id ? "Link Copiato!" : "Condividi"}
                                       </button>
                                     </div>
-                                    <span className={`text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded-md border ${
-                                      available 
-                                        ? "bg-google-green/10 text-google-green border-google-green/10" 
-                                        : "bg-gray-200/50 text-gray-500 border-gray-200"
-                                    }`}>
-                                      {available ? "Disponibile" : "Prossimamente"}
+                                    <span className="text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded-md border bg-google-green/10 text-google-green border-google-green/10">
+                                      Disponibile
                                     </span>
                                   </div>
                                 </div>
