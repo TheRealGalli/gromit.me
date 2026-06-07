@@ -67,7 +67,7 @@ const GEMS_DATA: Gem[] = [
     description: "Ottimizza e pulisce immagini immobiliari per presentazioni professionali.",
     docLink: "https://docs.google.com/document/d/1NOjAn2NoX_gMbWvM7s57yEGVhhO_ibrIYN1hS7L3HY0/edit?usp=drive_link",
     source: "immagini",
-    emoji: "✨"
+    emoji: "🏡"
   },
 
   // Tutti gli altri sono sotto AdE Informa
