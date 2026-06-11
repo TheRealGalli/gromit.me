@@ -70,7 +70,7 @@ export const GemsSection = () => {
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
               CSD Station gestisce intelligenza e aggiornamenti delle <strong>Configurazioni di Prompt</strong>, ma l'utilizzo avviene <strong>interamente nel tuo ambiente</strong>.
-              Garantiamo totale privacy: noi non accediamo alle tue conversazioni o dati, sei tu il titolare del trattamento. La <strong>licenza d'uso della configurazione e i suoi aggiornamenti</strong> sono garantiti per la vita del prodotto nel tuo account.
+              Garantiamo totale privacy: noi non accediamo alle tue conversazioni o dati, sei tu il titolare del trattamento. La <strong>licenza d'uso dell'asset di configurazioni del tuo settore e i suoi aggiornamenti</strong> sono garantiti per la vita del prodotto nel tuo account.
             </p>
           </div>
         </div>
