@@ -297,7 +297,7 @@ export const GemsCatalog = () => {
   });
 
   // Raggruppamento per fonte
-  const sourcesKeys: Array<keyof typeof SOURCE_LABELS> = ["ade", "normativa", "google", "immagini"];
+  const sourcesKeys: Array<keyof typeof SOURCE_LABELS> = ["immagini", "ade", "normativa", "google"];
 
   return (
     <div className="w-full max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 mb-16">
@@ -472,8 +472,12 @@ export const GemsCatalog = () => {
                                         {copiedId === gem.id ? "Link Copiato!" : "Condividi"}
                                       </button>
                                     </div>
-                                    <span className="text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded-md border bg-google-green/10 text-google-green border-google-green/10">
-                                      Disponibile
+                                    <span className={`text-[8px] font-black uppercase tracking-widest px-2 py-0.5 rounded-md border ${
+                                      gem.source === "immagini" 
+                                        ? "bg-google-green/10 text-google-green border-google-green/10" 
+                                        : "bg-google-blue/10 text-google-blue border-google-blue/10"
+                                    }`}>
+                                      {gem.source === "immagini" ? "129€" : "Asset"}
                                     </span>
                                   </div>
                                 </div>
