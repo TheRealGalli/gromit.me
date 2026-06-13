@@ -29,7 +29,8 @@ export const GemsSection = () => {
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Assistenti virtuali altamente specializzati, creati per supportarti in ogni fase del tuo lavoro.
-            La loro potenza risiede in un'architettura unica.
+            La loro potenza risiede in un'architettura unica.<br className="hidden sm:inline" />
+            <strong className="text-google-blue block mt-2">Doppio click sulla cartella del tuo settore per vedere tutte le configurazioni e pagine di dettaglio!</strong>
           </p>
         </div>
 
